@@ -1,0 +1,20 @@
+{
+  "name": "@loggregator/adapters",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "check": "biome check .",
+    "check:fix": "biome check --apply ."
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "tsx": "^4.7.0",
+    "turbo": "^1.11.2"
+  }
+}

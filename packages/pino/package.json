@@ -1,0 +1,19 @@
+{
+  "name": "@loggregator/pino-adapter",
+  "version": "0.0.1",
+  "description": "Pino plugin for loggregator.co",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check src",
+    "check:fix": "biome check --apply src"
+  },
+  "author": "Nico",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.10.5",
+    "pino-abstract-transport": "^1.1.0"
+  }
+}
