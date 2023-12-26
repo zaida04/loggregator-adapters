@@ -3,7 +3,6 @@ const transport = pino.transport({
 	target: "@loggregator/pino-adapter",
 	options: {
 		token: process.env.LOGGREGATOR_TOKEN,
-		apiURL: "http://localhost:5173/api/logger",
 	},
 });
 
