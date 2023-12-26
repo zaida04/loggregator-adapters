@@ -4,14 +4,19 @@
   "description": "Pino plugin for loggregator.co",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
+  "author": "Nico",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit"
   },
-  "author": "Nico",
-  "license": "MIT",
   "dependencies": {
-    "@types/node": "^20.10.5",
     "pino-abstract-transport": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5"
   }
 }
