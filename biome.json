@@ -4,11 +4,7 @@
 		"enabled": true
 	},
 	"files": {
-		"ignore": [
-			".vercel/*",
-			".svelte-kit/*",
-			"drizzle/*"
-		]
+		"ignore": [".vercel/*", ".svelte-kit/*", "drizzle/*", "dist/*"]
 	},
 	"formatter": {
 		"enabled": true,

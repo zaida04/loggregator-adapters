@@ -1,6 +1,6 @@
 import build from "pino-abstract-transport";
-import { AdapterOptions } from "./types";
 import { sendLog } from "./request";
+import { AdapterOptions } from "./types";
 
 async function createTransport(options: AdapterOptions) {
 	return build(async (source) => {

@@ -6,9 +6,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "typecheck": "tsc --noEmit",
-    "check": "biome check src",
-    "check:fix": "biome check --apply src"
+    "typecheck": "tsc --noEmit"
   },
   "author": "Nico",
   "license": "MIT",
