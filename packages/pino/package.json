@@ -1,16 +1,14 @@
 {
   "name": "@loggregator/pino-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pino plugin for loggregator.co",
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
   "author": "Nico",
   "license": "MIT",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -18,5 +16,20 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.5"
-  }
+  },
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts"
 }
