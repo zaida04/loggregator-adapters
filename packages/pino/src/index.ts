@@ -4,7 +4,7 @@ import { AdapterOptions } from "./types";
 async function createTransport(options: AdapterOptions) {
 	return build(async (source) => {
 		for await (const obj of source) {
-			const request = await fetch(options.apiURL ?? "https://loggregator.co/api/logger", {
+			const request = await fetch(options.apiURL ?? "https://loggregator.nico.engineer/api/logger", {
 				method: "POST",
 				body: JSON.stringify({ content: obj.msg }),
 				headers: {
